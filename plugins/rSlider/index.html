@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>rSlider - The awesome custom slider</title>
+
+	<link rel="stylesheet" type="text/css" href="less/rSlider.css">
+
+	<style type="text/css">
+	.mySlider {
+		width: 300px;
+		margin: 0 auto;
+	}
+	</style>
+
+	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="js/rSlider.js"></script>
+
+
+	<script type="text/javascript">
+		$(function() {
+			var mySliderDiv = $('.mySlider'),
+				myRSlider = mySliderDiv.rSlider();
+
+
+		})
+	</script>
+</head>
+<body>
+	<header>
+		<h1>rSlider</h1>
+	</header>
+	<section>
+		<div class="mySlider rangeSlider"></div>
+	</section>
+</body>
+</html>
