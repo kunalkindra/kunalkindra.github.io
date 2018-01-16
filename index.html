@@ -2,24 +2,23 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=4.0" />
+	<meta name="viewport"
+		  content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=4.0"/>
 	<title>Kunal Kindra's Github</title>
-	
+
 	<style type="text/css">
 		body {
-			background-color: #000; 
+			background-color: #000;
 			color: #7CFC00;
 			font-family: monospace;
 		}
-		
+
 		#clock {
-			text-align: center;	
+			text-align: center;
 			font-size: 30px;
 			margin-top: 50px;
 		}
-		.navLink {
-			text-align: center;
-		}
+
 		.content {
 			position: fixed;
 			bottom: 0;
@@ -39,38 +38,44 @@
 	</style>
 </head>
 <body>
-	<div id="clock"></div>
-	<br><br>
-	
-	<div class="content">
-		<h3>right now, lets just suffice with -</h3>
-		<h1>Hello World.</h1>		
-	</div>
+<div id="clock"></div>
+<br><br>
 
-	<div class="signature">kindK</div>
-	
-	<script>
+<div class="content">
+	<h3>right now, lets just suffice with -</h3>
+	<h1>Hello World.</h1>
+</div>
+
+<div class="signature">kindK</div>
+
+<script>
 	var clockDiv = document.getElementById('clock');
+
 	function getTime() {
-	    var today = new Date();
-	    var h = today.getHours();
-	    var m = today.getMinutes();
-	    var s = today.getSeconds();
-	    h = checkTime(h);
-	    m = checkTime(m);
-	    s = checkTime(s);
-	    return h + ":" + m + ":" + s;
+		var today = new Date(),
+			h = today.getHours(),
+			m = today.getMinutes(),
+			s = today.getSeconds();
+		h = checkTime(h);
+		m = checkTime(m);
+		s = checkTime(s);
+		return h + ":" + m + ":" + s;
 	}
+
 	function checkTime(i) {
-	    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-	    return i;
+		// add zero in front of numbers < 10
+		if (i < 10) {
+			i = "0" + i
+		}
+		return i;
 	}
+
 	function printTime() {
 		clockDiv.innerHTML = getTime();
 		setTimeout(printTime, 500);
-	}	
+	}
 
 	printTime();
-	</script>
+</script>
 </body>
 </html>
