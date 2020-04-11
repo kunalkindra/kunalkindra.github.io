@@ -1,7 +1,3 @@
 [submodule "repos/reactComponentLifeCycleInDepth"]
 	path = repos/reactComponentLifeCycleInDepth
 	url = https://github.com/kunalkindra/reactComponentLifeCycleInDepth.git
-	
-[submodule "repos/tambola"]
-	path = repos/tambola
-	url = https://github.com/kunalkindra/tambola.git
